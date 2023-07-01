@@ -21,8 +21,5 @@ const Project = g.model('Project', {
 })
 
 export default config({
-  schema: g.object({
-    User,
-    Project,
-  }),
+  schema: g,
 });
