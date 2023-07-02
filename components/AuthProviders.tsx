@@ -31,7 +31,7 @@ const AuthProviders = () => {
     return (
       <div>
         {Object.values(providers).map((provider: Provider,i)=>(
-           <button className='cursor-pointer' key={i}>{provider.id}</button>
+           <button className='cursor-pointer' key={i}  onClick={()=> signIn(provider?.id)}>{provider.id}</button>
         ))}
       </div>
     )
